@@ -1,0 +1,34 @@
+<html>
+<head>
+<script langauge="javascript">
+function post_value(s){
+opener.document.getElementById('harga').value = s;
+opener.document.getElementById('harga').value = s;
+self.close();
+}
+</script>
+<title>Halaman Popup (Child)</title>
+</head>
+<body>
+<table border='1'>
+<tr>
+    <td>No</td>
+    <td>Harga</td>
+    <td>Nama</td>
+    <td>Aksi</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>200</td>
+    <td>Baju</td>
+    <td><a href='#' onclick="post_value('200');">Pilih</a></td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>300</td>
+    <td>Tas</td>
+    <td><a href='#' onclick="post_value('300');">Pilih</a></td>
+</tr>
+</form>
+</body>
+</html>
