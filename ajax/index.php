@@ -30,6 +30,7 @@ include 'auth.php';
 		<h2 align="center" style="margin: 30px;">CRUD Ajax No Loading</h2>
 
         <form method="post" class="form-data" id="form-data">  
+        	<input type="hidden" name="id" id="id">
 	<div class="row">
 		<div class="col-sm-3">
 			<div class="form-group">
