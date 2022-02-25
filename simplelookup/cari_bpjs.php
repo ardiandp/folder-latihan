@@ -9,7 +9,7 @@
 			window.parent.passingToParent();
 		}
 
-  </script>
+</script>
 
 <?php
 
