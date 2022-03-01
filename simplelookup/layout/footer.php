@@ -13,7 +13,7 @@
 
 <!-- jQuery 
 <script src="js/jquery.min.js"></script>  <!-- ini untu js pop up -->
-<!-- <script src="AdminLTE/plugins/jquery/jquery.min.js"></script>  --> <!-- yang asli sementara dimatikan dulu -->
+<script src="AdminLTE/plugins/jquery/jquery.min.js"></script>   <!-- yang asli sementara dimatikan dulu -->
 <!-- Bootstrap -->
 <script src="AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
@@ -51,7 +51,7 @@
     $('#example2').DataTable({
       "paging": true,
       "lengthChange": false,
-      "searching": false,
+      "searching": true,
       "ordering": true,
       "info": true,
       "autoWidth": false,

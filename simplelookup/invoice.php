@@ -1,3 +1,6 @@
+  <?php
+  $koneksi=mysqli_connect("localhost","root","","test");
+  ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -29,28 +32,36 @@
 		</script>
 
 
+
+
 <script language="javascript">
-var my_variable = new Array(); // for example
+var my_produk = new Array(); // for example
 function passingToParent(){
-  arrayOfStrings = my_variable[0].split(',');  
-  for (var i=1; i < my_variable.length; i++) {
-    $('#' + arrayOfStrings[i-1]).val(my_variable[i]);
-  }
-  // single form
-  //parent.$.fn.colorbox.close();
+    arrayOfStrings = my_variable[0].split(',');    
+    for (var i=1; i < my_variable.length; i++) {
+        $('#' + arrayOfStrings[i-1]).val(my_variable[i]);
+    }
+    // single form
+    //parent.$.fn.colorbox.close();
 
-  // framework form
-  jQuery.colorbox.close();;
+    // framework form
+    jQuery.colorbox.close();;
 }
-
 </script>	
 
 
+<script language="javascript">
+		function getSelected(kode_produk, nama_produk, harga){	
+			
+			var args = new Array();
+			
+			for (var i = 0; i < arguments.length; i++)
+				window.parent.my_produk[i+1] = arguments[i];
+				
+			window.parent.passingToParent();
+		}
 
-
-
-
-
+</script>
 
 
 
@@ -120,6 +131,33 @@ function passingToParent(){
               </div>
               <!-- /.row -->
 
+
+              <!-- kolom tambah produk -->
+              <div class="col-sm-12">                  
+              <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#modal-default" onClick="my_produk[0]='kode_produk,nama_produk,harga'">
+                  Cari Produk
+                </button>         
+                <div class="row">                
+                 
+                  <div class="col-2">
+                  <input type="text" name="telp" class="form-control" id="kode_produk" readonly placeholder="Kode">
+                  </div>
+                  <div class="col-4">
+                  <input type="text" name="telp" class="form-control" id="nama_produk" readonly placeholder="Nama Barang">
+                  </div>
+                  <div class="col-2">
+                  <input type="text" name="telp" class="form-control" id="harga" readonly placeholder="Harga">
+                  </div>
+                  <div class="col-2">
+                  <input type="text" name="telp" class="form-control" id="hub_keluarga" readonly placeholder="Jumlah">
+                  </div>
+                  <div class="col-2">
+                  <input type="text" name="telp" class="form-control" id="hub_keluarga" readonly placeholder="Total">
+                  </div>
+                  <small id="divAlertPegawai"></small>
+                </div>
+              </div>
+              <!-- akhir kolom tambah produk -->
               <!-- Table row -->
               <div class="row">
                 <div class="col-12 table-responsive">
@@ -148,26 +186,68 @@ function passingToParent(){
                       <td>Wes Anderson umami biodiesel</td>
                       <td>$50.00</td>
                     </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Monsters DVD</td>
-                      <td>735-845-642</td>
-                      <td>Terry Richardson helvetica tousled street art master</td>
-                      <td>$10.70</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Grown Ups Blue Ray</td>
-                      <td>422-568-642</td>
-                      <td>Tousled lomo letterpress</td>
-                      <td>$25.99</td>
-                    </tr>
+                   
                     </tbody>
                   </table>
                 </div>
                 <!-- /.col -->
               </div>
               <!-- /.row -->
+
+              <!-- modal barang -->
+              <div class="modal fade" id="modal-default">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Daftar Produk</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="card-body">
+            <table id="example2" class="table table-bordered table-striped">
+                  <thead>                
+                  <tr>
+    <td>No</td>
+    <td>Kode</td>   
+    <td>Nama Produk</td>
+    <td>Harga</td>
+    <td>Berat</td>
+  </tr>
+  
+    </thead>
+    <tbody>
+    <?php
+    $produk=mysqli_query($koneksi,"select *from produk");
+    $no=1;
+    while($data=mysqli_fetch_array($produk))
+    {
+    ?>
+    <tr>
+      <td><?php echo $no++ ?></td>
+      <td><a href="javascript:getSelected('<?=$data['kode_produk']?>','<?=$data['nama_produk']?>','<?=$data['harga']?>')">
+				<?=$data['kode_produk']?>
+			</a></td>     
+      <td><?php echo $data['nama_produk']; ?></td>
+      <td><?php echo $data['harga']; ?></td>
+      <td><?php echo $data['berat'] ?> </td>
+    </tr>
+   <?php } ?>
+ </tfoot>
+                </table>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+              <!-- akhir modal barang -->
 
               <div class="row">
                 <!-- accepted payments column -->
