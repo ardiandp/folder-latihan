@@ -86,7 +86,7 @@
              <br>
 
               <!-- modal barang -->
-<div class="modal fade" id="modal-item">
+      <div class="modal fade" id="modal-item">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -102,8 +102,7 @@
     <td>Pilih</td>
     <td>Nama</td>   
     <td>Alias</td>
-    <td>No Rekening</td>
-   
+    <td>No Rekening</td>   
   </tr>
   
     </thead>
@@ -119,7 +118,7 @@
                         data-nama="<?php echo $data['atas_nama'] ?>"
                         data-alias="<?php echo $data['alias'] ?>"
                         data-norek="<?php echo $data['norek'] ?>"
-                    <i class="fa fa-check"> </i>
+                       <i class="fa fa-check"></i>
                         select </button>
                     </td>
       <td> <?php echo $data['atas_nama']; ?> </td>     
@@ -166,7 +165,7 @@
   </div>
   <!-- /.content-wrapper -->
 
-<script>
+<script> 
     $(document).ready(function() {
         $(document).on('click','#select',function() {
             var nama = $(this).data('nama');
