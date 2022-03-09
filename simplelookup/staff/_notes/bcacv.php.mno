@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_bcacv" value="name:id;datatype:int,name:tanggal;datatype:date,name:keterangan;datatype:blob,name:cabang;datatype:string,name:jumlah;datatype:int,name:status;datatype:string,name:saldo;datatype:string" />
+</info>

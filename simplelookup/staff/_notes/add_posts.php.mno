@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:id_kategori;datatype:int,name:nama_kategori;datatype:string,name:type;datatype:string" />
+	<infoitem key="UD_kategori" value="name:id_kategori;datatype:int,name:nama_kategori;datatype:string,name:type;datatype:string" />
+	<infoitem key="UD_kat" value="name:id_kategori;datatype:int,name:nama_kategori;datatype:string,name:type;datatype:string" />
+</info>

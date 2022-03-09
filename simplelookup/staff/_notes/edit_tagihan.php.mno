@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_edit" value="name:idtagihan;datatype:int,name:no_tagihan;datatype:string,name:keterangan;datatype:blob,name:aktif;datatype:string" />
+</info>

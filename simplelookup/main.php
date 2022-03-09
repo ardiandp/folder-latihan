@@ -1,7 +1,10 @@
 
-<?php include ('layout/header.php') ?>
-<?php include ('layout/sidebar.php') ?>
-
+<?php 
+include ('layout/header.php') ;
+include ('layout/sidebar.php') ;
+include ('Connections/local.php');
+include ('Connections/library.php');
+?>
   <!-- konten disii -->
   <?php
 $page=htmlentities($_GET['page']);

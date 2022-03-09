@@ -14,7 +14,7 @@
           <img src="../storage/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php //echo $_SESSION['nama_lengkap'] ?></a>
+          <a href="#" class="d-block"><?php echo $_SESSION['nama_lengkap'] ?></a>
         </div>
       </div>
 
@@ -39,11 +39,8 @@
          
 		 
 		    <!-- awal menu -->
-        <?php
-$koneksi=mysqli_connect("localhost","root","","dev_staff");
-?>
 <?php
-$main=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.id,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='0' and menu.is_active='Y'  ");
+$main=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.id,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='0' and menu.is_active='Y' and  admin.username='$_SESSION[MM_Username]' ");
 while($r=mysqli_fetch_array($main))
 {?>
                 
@@ -59,7 +56,7 @@ while($r=mysqli_fetch_array($main))
 
 			   <ul class="nav nav-treeview">
 			   <?php
-$sub=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.link,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='$r[id]' AND menu.is_active='Y' ");
+$sub=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.link,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='$r[id]' AND menu.is_active='Y' and admin.username='$_SESSION[MM_Username]'");
 while($w=mysqli_fetch_array($sub))
                    {?>
               <li class="nav-item">

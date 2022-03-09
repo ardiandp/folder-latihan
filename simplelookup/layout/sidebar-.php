@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="?page=home" class="brand-link">
-      <img src="../storage/AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -11,10 +11,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../storage/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="AdminLTE/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php //echo $_SESSION['nama_lengkap'] ?></a>
+          <a href="#" class="d-block">Ardian </a>
         </div>
       </div>
 
@@ -39,46 +39,38 @@
          
 		 
 		    <!-- awal menu -->
-        <?php
-$koneksi=mysqli_connect("localhost","root","","dev_staff");
-?>
-<?php
-$main=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.id,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='0' and menu.is_active='Y'  ");
-while($r=mysqli_fetch_array($main))
-{?>
-                
-          <li class="nav-item">
+        <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="<?php echo $r['icon']?>"></i>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-               <?php echo" $r[name] ";?>
+                Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-
-
-			   <ul class="nav nav-treeview">
-			   <?php
-$sub=mysqli_query($koneksi,"SELECT `level`.`level`,admin.nama_lengkap,admin.username,akses.id_level,akses.menu,menu.`name`,menu.link,menu.icon from `level`,admin,akses,menu WHERE admin.`id_level`=`level`.id_level AND admin.`id_level`=akses.id_level AND akses.menu=menu.id AND menu.is_parent='$r[id]' AND menu.is_active='Y' ");
-while($w=mysqli_fetch_array($sub))
-                   {?>
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $w['link']?>" class="nav-link">
-                  <i class="<?php echo $w['icon']?>"></i>
-                  <p><?php echo" $w[name] ";?></p>
+                <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
                 </a>
               </li>
-             
-            <?php } ?>
-            </ul>   <?php } ?>
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
           </li>
-<!--akhir menu-->
          
          
-         
-         
-         
-     
+           
      
         
         

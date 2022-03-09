@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_bcaardian" value="name:id;datatype:int,name:tanggal;datatype:string,name:keterangan;datatype:blob,name:cabang;datatype:string,name:jumlah;datatype:string,name:status;datatype:string,name:saldo;datatype:string" />
+</info>

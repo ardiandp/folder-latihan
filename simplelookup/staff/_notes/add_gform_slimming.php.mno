@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_gerai" value="name:kode_gerai;datatype:string,name:nama_gerai;datatype:string,name:alamat;datatype:blob,name:whatsapp;datatype:string,name:telp;datatype:string,name:gambar;datatype:string" />
+</info>

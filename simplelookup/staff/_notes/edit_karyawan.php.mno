@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_bagian" value="name:kode_bagian;datatype:string,name:nama_bagian;datatype:string" />
+	<infoitem key="UD_edit" value="name:kode_kry;datatype:string,name:nik;datatype:string,name:nama_lengkap;datatype:string,name:alamat;datatype:blob,name:agama;datatype:string,name:no_hp;datatype:string,name:email;datatype:string,name:tempat_lahir;datatype:string,name:tgl_lahir;datatype:date,name:foto;datatype:string,name:bagian;datatype:string,name:aktif;datatype:string" />
+</info>

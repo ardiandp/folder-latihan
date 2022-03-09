@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_kat" value="name:id_kategori;datatype:int,name:nama_kategori;datatype:string,name:type;datatype:string" />
+	<infoitem key="UD_edit" value="name:id_post;datatype:int,name:username;datatype:string,name:judul;datatype:string,name:judul_seo;datatype:string,name:id_kategori;datatype:int,name:keterangan;datatype:blob,name:gambar;datatype:string,name:created_at;datatype:datetime,name:updated_at;datatype:datetime" />
+	<infoitem key="UD_kategori" value="name:id_kategori;datatype:int,name:nama_kategori;datatype:string,name:type;datatype:string" />
+</info>
