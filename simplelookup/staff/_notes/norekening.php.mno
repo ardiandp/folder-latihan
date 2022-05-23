@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_Recordset1" value="name:idrek;datatype:int,name:atas_nama;datatype:string,name:alias;datatype:string,name:norek;datatype:string,name:bank;datatype:string,name:created_at;datatype:timestamp,name:idbank;datatype:int,name:nama_bank;datatype:string,name:kode;datatype:string" />
-</info>

@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_edit" value="name:idkampus;datatype:int,name:kode;datatype:string,name:namakampus;datatype:blob,name:telp;datatype:string,name:alamat;datatype:blob,name:kk;datatype:string,name:maps;datatype:blob" />
-</info>

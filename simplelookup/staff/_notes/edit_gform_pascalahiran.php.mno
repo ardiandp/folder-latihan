@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_edit" value="name:idgform;datatype:int,name:nama;datatype:string,name:no_hp;datatype:string,name:alamat;datatype:blob,name:rencana lahiran;datatype:string,name:hpl;datatype:string,name:berat_badan;datatype:string,name:anak_ke;datatype:string,name:proses_lahiran;datatype:string,name:rencana_asi;datatype:string,name:implan;datatype:string,name:perawatan;datatype:string,name:slimming;datatype:string,name:riwayat_penyakit;datatype:string" />
-</info>

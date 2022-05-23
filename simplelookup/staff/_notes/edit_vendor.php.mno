@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_bank" value="name:idbank;datatype:int,name:nama_bank;datatype:string,name:kode;datatype:string" />
-	<infoitem key="UD_edit" value="name:idvendor;datatype:int,name:nama_vendor;datatype:string,name:nama_cp;datatype:string,name:jenis_vendor;datatype:string,name:email;datatype:string,name:handphone;datatype:string,name:kode_bank;datatype:string,name:norekening;datatype:string,name:alamat;datatype:blob,name:sosmed;datatype:string,name:aktif;datatype:string" />
-</info>

@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_data" value="name:idjurusan;datatype:int,name:nama_jurusan;datatype:string,name:keterangan;datatype:blob" />
-</info>

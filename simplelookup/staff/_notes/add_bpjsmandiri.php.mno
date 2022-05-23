@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_master" value="name:idbpjs;datatype:int,name:nik;datatype:string,name:no_akun;datatype:string,name:nama;datatype:string,name:no_va;datatype:string,name:hub_keluarga;datatype:string,name:terdaftar;datatype:string,name:aktif;datatype:string,name:parent;datatype:string,name:karyawan;datatype:string,name:kelas;datatype:int,name:biaya;datatype:int" />
-</info>

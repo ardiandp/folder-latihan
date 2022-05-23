@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_bon" value="name:idbon;datatype:int,name:keterangan;datatype:blob,name:kategori;datatype:string,name:penerima;datatype:string,name:biaya;datatype:int,name:file;datatype:string,name:tanggal;datatype:date,name:created_at;datatype:datetime,name:updated_at;datatype:datetime" />
-</info>

@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_akses" value="name:id;datatype:int,name:level;datatype:string,name:name;datatype:string,name:is_active;datatype:string,name:link;datatype:string" />
-</info>

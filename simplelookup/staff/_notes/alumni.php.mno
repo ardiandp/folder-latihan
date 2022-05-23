@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_data" value="name:idalumni;datatype:int,name:kampus;datatype:string,name:nim;datatype:string,name:nama_lengkap;datatype:string,name:alamat;datatype:blob,name:no_hp;datatype:string,name:tempat_lahir;datatype:string,name:tanggal_lahir;datatype:date,name:jurusan;datatype:string,name:no_sk;datatype:string,name:no_ijasah;datatype:string,name:nilai;datatype:real,name:foto;datatype:string,name:idjurusan;datatype:int,name:nama_jurusan;datatype:string,name:keterangan;datatype:blob,name:idkampus;datatype:int,name:kode;datatype:string,name:namakampus;datatype:blob,name:telp;datatype:string,name:alamat;datatype:blob,name:kk;datatype:string,name:maps;datatype:blob" />
-</info>

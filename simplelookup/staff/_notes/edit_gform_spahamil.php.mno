@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_edit" value="name:idgform;datatype:int,name:nama;datatype:string,name:alamat;datatype:blob,name:telp;datatype:string,name:beratbadan;datatype:string,name:usiakehamilan;datatype:string,name:kehamilan_ke;datatype:string,name:menggunakan_pen;datatype:string,name:ada_keluhan;datatype:string,name:kondisi_plasenta;datatype:string,name:kram_rubuh;datatype:string,name:pendarahan;datatype:string,name:stretchmark;datatype:string,name:lokasi_perawatan;datatype:string,name:gerai;datatype:string" />
-	<infoitem key="UD_gerai" value="name:kode_gerai;datatype:string,name:nama_gerai;datatype:string,name:alamat;datatype:blob,name:whatsapp;datatype:string,name:telp;datatype:string,name:gambar;datatype:string" />
-</info>

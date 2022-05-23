@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_slimming" value="name:idgform;datatype:int,name:nama;datatype:string,name:no_hp;datatype:string,name:alamat;datatype:blob,name:berat_badan;datatype:string,name:lokasi_perawatan;datatype:string,name:gerai;datatype:string,name:riwayat_penyakit;datatype:blob,name:keterangan_lain;datatype:blob" />
-</info>
